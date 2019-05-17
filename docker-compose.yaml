@@ -1,0 +1,9 @@
+version: "3"
+services: 
+  dns-cheater:
+    build: "."
+    container_name: "dns-cheater"
+    restart: "always"
+    ports: 
+      - "80:80"
+      - "53:53"
