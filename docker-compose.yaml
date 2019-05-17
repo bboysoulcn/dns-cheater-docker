@@ -4,6 +4,8 @@ services:
     build: "."
     container_name: "dns-cheater"
     restart: "always"
+    volumes:
+      - "./dns/:/dns/"
     ports: 
-      - "80:80"
+      - "8088:80"
       - "53:53"
